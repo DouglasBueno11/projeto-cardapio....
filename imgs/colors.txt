@@ -1,0 +1,10 @@
+#2B0E10 bordo escuro
+#59381C marron
+#A67A44 marron caramelo
+#F2DAAC areia mais clara
+#A68241 caramelo amarronzado
+#400D0D bordo
+#401C08 bordo amaderado
+#734116 marron amadirado
+#F2D3AC areia clara
+#D99036 caramelo

@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "AkzidenzGrotesk-Extended", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  /*animação de rolagem*/
+}
+
+body {
+  height: 100vh;
+}
+
+#menu {
+  background-color: rgba(255, 255, 255, 0.568);
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 40px;
+  z-index: 1000;
+}
+
+#menu .logo {
+  height: 80%;
+  padding-top: 6px;
+}
+
+#menu ul {
+  list-style: none;
+  margin-right: 20%;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  display: inline-block;
+  padding: 25px 20px;
+  color: rgb(0, 0, 0);
+  padding-top: 11px;
+}
+
+#menu ul li a:hover {
+  color: gray;
+}
+
+#top {
+  background-color: #a67a44;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(IMGs/Trattoria/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#top h1 {
+  color: white;
+  font-family: "Playfair Display";
+  font-weight: 30;
+}
+
+#top h1 {
+  font-size: 30px;
+}
+
+#content {
+  min-height: 100vh;
+}
+
+#parte1 {
+  padding-top: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+#parte2 {
+  background-color: rgb(255, 255, 255);
+}
+
+#parte3 {
+  background-color: rgb(255, 255, 255);
+}
+
+#parte4 {
+  background-color: rgb(255, 255, 255);
+}
+
+.titulcategorias h1 {
+  padding: 110px 0px 0px 150px;
+}
+
+/*backup*/
+.pratorecomendado h1 {
+  position: relative;
+  top: 450px;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.pratorecomendado img {
+  margin-top: 100px;
+  width: 80%;
+  margin-left: 10.3%;
+}
+
+/*backup*/
+
+
+/*INICIO SLIDES*/
+.slider {
+  margin: 0 auto;
+  width: 1000px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.slides1 {
+  width: 1000px;
+  height: 410px;
+  display: flex;
+}
+
+.slides1 input {
+  display: none;
+}
+
+.slides1 {
+  width: 25%;
+  position: relative;
+}
+
+.slides1 img {
+  width: 1000px;
+  margin-top: 3%; 
+}
+
+.manual-navegation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .img {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .img {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .img {
+  margin-left: -100%;
+}
+
+.navegation-auto div {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/*FIM SLIDES*/
+
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 150px 90px 0px 106px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #67676700;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 1px;
+  cursor: pointer;
+  box-shadow: 7px 7px 7px 7px #faefef2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.card figure {
+  width: 290px;
+  height: 290px;
+  background-color: #ffffff00;
+  border-radius: 1%;
+  display: flex;
+  padding: 0px;
+  margin-bottom: 5%;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.card h2 {
+  margin-bottom: 5%;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.7s cubic-bezier(0, 0, 0.5, 1);
+}
+
+.card:not(:hover) {
+  transform: scale(1);
+  transition: all 0.7s cubic-bezier(0, 0, 0.5, 1);
+}
+
+.card figure {
+  width: 100%;
+}
+
+#rodape {
+  height: 300px;
+  background-color: #000000;
+  margin-top: 150px;
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-evenly;
+  color: #fff;
+
+}
+
+.coluna-rodape {
+  height: 90%;
+  background-color: rgba(0, 255, 255, 0);
+  width: 30%;
+
+}
+
+.linhaicons {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.linhaicons figure {
+  cursor: pointer;
+}
+
+.esquerda {
+  height: 80%;
+  margin-top: 1.5%;
+  margin-left: -10%;
+}
+
+.sobre-nos {
+  height: 80%;
+  margin-top: 1.5%;
+  margin-left: -20%;
+}
+
+.mapa {
+  margin-top: .5%;
+}
+
+#contato {
+  margin-top: 7%;
+}
+
+#numero-contato {
+  line-height: 30px;
+}
+
+#numero-contato {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+#textosobrenos {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+}
