@@ -61,7 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-image: url(IMGs/Trattoria/4.jpg);
+  background-image: url(imgs/trattoria/4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
